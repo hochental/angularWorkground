@@ -1,0 +1,23 @@
+<h2>Driver</h2>
+
+  <table border="1" *ngIf="driver">
+    <tr>
+      <th>Lp</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Race experience</th>
+      <th>Photo</th>
+      <th>Sponsor</th>
+      <th>Team</th>
+    </tr>
+    <tr>
+      <td> {{driver.id}} </td>
+      <td> {{driver.name}} </td>
+      <td> {{driver.age}} </td>
+      <td> {{driver.raceExperience}} </td>
+      <td> <img src={{driver.photoUrl}} width="150px" height="auto"> </td>
+      <td> {{driver.sponsor.name}} </td>
+      <td> {{driver.team.name}} </td>
+    </tr>
+  </table>
+

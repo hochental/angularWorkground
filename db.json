@@ -1,0 +1,77 @@
+{
+  "drivers": [
+    {
+      "id": 1,
+      "name": "Lewis Hamilton",
+      "age": "30",
+      "team": {
+        "id": 101,
+        "name": "Mercedes"
+      },
+      "raceExperience": 15,
+      "sponsor": {
+        "id": 1001,
+        "name": "Tommy Hilfiger"
+      },
+      "photoUrl": "https://www.formula1.com/content/fom-website/en/championship/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1521204312905.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sebastian Vettel",
+      "age": "31",
+      "team": {
+        "id": 102,
+        "name": "Ferrari"
+      },
+      "raceExperience": 16,
+      "sponsor": {
+        "id": 1002,
+        "name": "RayBan"
+      },
+      "photoUrl": "https://www.formula1.com/content/fom-website/en/championship/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1522068627396.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Daniel Ricciardo",
+      "age": "27",
+      "team": {
+        "id": 103,
+        "name": "Red Bull Racing"
+      },
+      "raceExperience": 10,
+      "sponsor": {
+        "id": 1003,
+        "name": "TagHeuer"
+      },
+      "photoUrl": "https://www.formula1.com/content/fom-website/en/championship/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1521203915633.jpg"
+    }
+  ],
+  "raceteam": [
+    {
+      "id": 101,
+      "name": "Mercedes"
+    },
+    {
+      "id": 102,
+      "name": "Ferrari"
+    },
+    {
+      "id": 103,
+      "name": "Red Bull Racing"
+    }
+  ],
+  "sponsor": [
+    {
+      "id": 1001,
+      "name": "Tommy Hilfiger"
+    },
+    {
+      "id": 1003,
+      "name": "TagHeuer"
+    },
+    {
+      "id": 1002,
+      "name": "RayBan"
+    }
+  ]
+}

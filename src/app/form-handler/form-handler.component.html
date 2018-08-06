@@ -1,0 +1,50 @@
+<h3>Form</h3>
+
+<form *ngIf="driver" #empForm="ngForm">
+
+      <input type="string"  name="name"
+                  [(ngModel)]="driver.name"
+                  placeholder="name"
+                  #name="ngModel">
+
+        <br>
+      <input type="number" name="raceExperience"
+             [(ngModel)]="driver.raceExperience"
+             placeholder="raceExperience"
+             #raceExperience="ngModel">
+
+      <br>
+
+      <input type="number" name="age"
+             [(ngModel)]="driver.age"
+             placeholder="age"
+             #age="ngModel">
+
+      <br>
+
+      <input type="string" name="photoUrl"
+             [(ngModel)]="driver.photoUrl"
+             placeholder="photoUrl"
+             #photoUrl="ngModel">
+
+      <br>
+
+      <select [(ngModel)]="driver.team" *ngIf="raceTeam" name="name">
+        <option *ngFor="let team of raceTeam" [ngValue]="team">
+          {{team.name}}
+        </option>
+      </select>
+
+      <br>
+
+      <select [(ngModel)]="driver.sponsor" *ngIf="sponsors" name="name">
+        <option *ngFor="let sponsor of sponsors" [ngValue]="sponsor">
+          {{sponsor.name}}
+        </option>
+      </select>
+
+      <br>
+
+  <button>Zapisz</button>
+</form>
+

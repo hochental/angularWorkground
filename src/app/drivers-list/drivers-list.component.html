@@ -1,0 +1,21 @@
+<h2>Drivers list</h2>
+
+<table *ngIf="drivers" border="1">
+  <tr>
+    <th>Lp</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Race experience</th>
+    <th>Admin panel</th>
+  </tr>
+  <tr *ngFor="let driver of drivers">
+    <td> {{driver.id}} </td>
+    <td> {{driver.name}} </td>
+    <td> {{driver.age}} </td>
+    <td> {{driver.raceExperience}} </td>
+    <td> <a routerLink="/driverDetails/{{driver.id}}">Details || </a>
+         <a routerLink=""> Edit || </a>
+         <a routerLink="" (click)="removeDriver(driver)"> Delete </a>
+    </td>
+  </tr>
+</table>
