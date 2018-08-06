@@ -5,8 +5,8 @@
       "name": "Lewis Hamilton",
       "age": "30",
       "team": {
-        "id": 101,
-        "name": "Mercedes"
+        "id": 102,
+        "name": "Ferrari"
       },
       "raceExperience": 15,
       "sponsor": {
@@ -25,8 +25,8 @@
       },
       "raceExperience": 16,
       "sponsor": {
-        "id": 1002,
-        "name": "RayBan"
+        "id": 1003,
+        "name": "TagHeuer"
       },
       "photoUrl": "https://www.formula1.com/content/fom-website/en/championship/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1522068627396.jpg"
     },
