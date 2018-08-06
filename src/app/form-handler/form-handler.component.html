@@ -2,7 +2,7 @@
 
 <form *ngIf="driver" #empForm="ngForm">
 
-      <input type="string"  name="name"
+      <input type="text" name="namebox"
                   [(ngModel)]="driver.name"
                   placeholder="name"
                   #name="ngModel">
@@ -22,7 +22,7 @@
 
       <br>
 
-      <input type="string" name="photoUrl"
+      <input type="text" name="photoUrl"
              [(ngModel)]="driver.photoUrl"
              placeholder="photoUrl"
              #photoUrl="ngModel">

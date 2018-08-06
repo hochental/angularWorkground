@@ -14,7 +14,7 @@
     <td> {{driver.age}} </td>
     <td> {{driver.raceExperience}} </td>
     <td> <a routerLink="/driverDetails/{{driver.id}}">Details || </a>
-         <a routerLink=""> Edit || </a>
+         <a routerLink="/driverEdit/{{driver.id}}"> Edit || </a>
          <a routerLink="" (click)="removeDriver(driver)"> Delete </a>
     </td>
   </tr>

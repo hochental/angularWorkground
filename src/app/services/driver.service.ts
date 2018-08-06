@@ -21,6 +21,9 @@ export class DriverService {
   addDriver(newDriver: Driver): Observable<Driver>{
     return this.http.post<Driver>( this.BASE_URL+"/drivers", newDriver);
   }
+  editDriver(editDriver: Driver): Observable<any>{
+    return this.http.put<any>(this.BASE_URL+"/drivers/"+editDriver.id, editDriver);
+  }
 
   getRaceTeam(): Observable<RaceTeam[]>{
     return this.http.get<RaceTeam[]>( this.BASE_URL+"/raceteam");

@@ -9,9 +9,11 @@ import {RouterModule, Routes} from '@angular/router';
 import { AddDriverComponent } from './add-driver/add-driver.component';
 import { FormHandlerComponent } from './form-handler/form-handler.component';
 import {FormsModule} from '@angular/forms';
+import { EditDriverComponent } from './edit-driver/edit-driver.component';
 
 const routes: Routes = [
   { path: 'driverDetails/:id', component: DriverComponent },
+    { path: 'driverEdit/:id', component: EditDriverComponent },
   { path: 'addDriver', component: AddDriverComponent },
   { path: 'driversList', component: DriversListComponent },
   { path: '', redirectTo: '/driversList', pathMatch: 'full' }
@@ -23,7 +25,8 @@ const routes: Routes = [
     DriverComponent,
     DriversListComponent,
     AddDriverComponent,
-    FormHandlerComponent
+    FormHandlerComponent,
+    EditDriverComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
