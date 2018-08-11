@@ -73,5 +73,35 @@
       "id": 1002,
       "name": "RayBan"
     }
+  ],
+  "users": [
+    {
+      "userRights": {
+        "id": 0,
+        "name": "Admin"
+      },
+      "username": "admin",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "test",
+      "password": "jajaja",
+      "userRights": {
+        "id": 1,
+        "name": "Standard User"
+      },
+      "id": 3
+    }
+  ],
+  "userrights": [
+    {
+      "id": 1,
+      "name": "Standard User"
+    },
+    {
+      "id": 0,
+      "name": "Admin"
+    }
   ]
 }

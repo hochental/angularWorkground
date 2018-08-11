@@ -10,13 +10,15 @@ import { AddDriverComponent } from './add-driver/add-driver.component';
 import { FormHandlerComponent } from './form-handler/form-handler.component';
 import {FormsModule} from '@angular/forms';
 import { EditDriverComponent } from './edit-driver/edit-driver.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'driverDetails/:id', component: DriverComponent },
     { path: 'driverEdit/:id', component: EditDriverComponent },
   { path: 'addDriver', component: AddDriverComponent },
   { path: 'driversList', component: DriversListComponent },
-  { path: '', redirectTo: '/driversList', pathMatch: 'full' }
+    { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const routes: Routes = [
     DriversListComponent,
     AddDriverComponent,
     FormHandlerComponent,
-    EditDriverComponent
+    EditDriverComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

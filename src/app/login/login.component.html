@@ -1,0 +1,32 @@
+<form (ngSubmit)="registerOnSubmit()">
+  <input type="text" name="namebox"
+         [(ngModel)]="newuser.username"
+         placeholder="username"
+         #name="ngModel">
+  <input type="password" name="passwordbox"
+         [(ngModel)]="newuser.password"
+         placeholder="password"
+         #name="ngModel">
+
+  <select [(ngModel)]="newuser.userRights" name="userRights_name">
+    <option *ngFor="let userRights of userRights" [ngValue]="userRights">
+      {{userRights.name}}
+    </option>
+  </select>
+
+  <button>Zapisz</button>
+</form>
+<br>
+
+<form (ngSubmit)="loginOnSubmit()">
+  <input type="text" name="namebox"
+         [(ngModel)]="user.username"
+         placeholder="username"
+         #name="ngModel">
+  <input type="password" name="passwordbox"
+         [(ngModel)]="user.password"
+         placeholder="password"
+         #name="ngModel">
+
+  <button>Zaloguj</button>
+</form>
